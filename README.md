@@ -1,5 +1,6 @@
 # CCR Hackathon 2020
-## CaminhON
+## CaminhON 
+![CaminhON](.github/logo-oficial.png?raw=true)
 
 O CaminhON e feito de caminhoneiros para caminhoneiros. Ele traz em um só lugar pontos de apoio confiáveis, garantindo segurança durante todo o percuso da viagem. CaminhON beneficia tanto caminhoneiros como também empresas de logística e transportadoras por saberem que seus caminhões, suas cargas e seus funcionários estão parados em pontos seguros.
 
