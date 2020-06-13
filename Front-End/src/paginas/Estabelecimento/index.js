@@ -1,7 +1,4 @@
 import React from 'react';
-import { BsStarFill } from 'react-icons/bs';
-import { BsStarHalf } from 'react-icons/bs';
-import { BsStar } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 import Header from '../../componentes/Header';
@@ -30,6 +27,12 @@ const Estabelecimento = () => {
             <h2>Disponibilidades:</h2>
 
             <h2>Avaliações:</h2>
+
+            <div>
+                <h3>Marcos Antonio</h3>
+                <Nota/>
+                <p>Bem okay.</p>
+            </div>
 
         </main>
     </div>
