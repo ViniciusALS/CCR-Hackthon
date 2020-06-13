@@ -5,6 +5,7 @@ import { BsStar } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 
 import Header from '../../componentes/Header';
+import Nota from '../../componentes/Nota';
 
 import './styles.css';
 
@@ -18,7 +19,7 @@ const Estabelecimento = () => {
             <h1>Posto do Seu Zé</h1>
             <p>O melhor posto da região!</p>
 
-            <img src={} alt=""/>
+            <Nota/>
 
             <p>Rua Melo Augusta, RJ, Rio de Janeiro</p>
             
