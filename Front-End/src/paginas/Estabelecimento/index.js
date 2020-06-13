@@ -1,6 +1,10 @@
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
+import { BsStarFill } from 'react-icons/bs';
+import { BsStarHalf } from 'react-icons/bs';
+import { BsStar } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+
+import Header from '../../componentes/Header';
 
 import './styles.css';
 
@@ -8,24 +12,25 @@ import './styles.css';
 
 const Estabelecimento = () => {
   return (
-    <div id="page-home">
-      <div className="content">
-        <header>
-          {/* <img src={logo} alt="CaminhON" /> */}
-        </header>
-
+    <div class="pagina">
+        <Header/>
         <main>
-          <h1>Estabelecimento</h1>
-          <p>Seu suporte na estrada.</p>
+            <h1>Posto do Seu Zé</h1>
+            <p>O melhor posto da região!</p>
 
-          <Link to="/login">
-            <span>
-              <FiLogIn />
-            </span>
-            <strong>Fazer login</strong>
-          </Link>
+            <img src={} alt=""/>
+
+            <p>Rua Melo Augusta, RJ, Rio de Janeiro</p>
+            
+            <Link to="#">
+                Avaliar estabelecimento
+            </Link>
+
+            <h2>Disponibilidades:</h2>
+
+            <h2>Avaliações:</h2>
+
         </main>
-      </div>
     </div>
   )
 }
