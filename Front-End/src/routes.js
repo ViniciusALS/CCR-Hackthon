@@ -6,17 +6,17 @@ import Login from './paginas/Login';
 import Perfil from './paginas/Perfil';
 import Explorar from './paginas/Explorar';
 import Historico from './paginas/Historico';
-import Parada from './paginas/Parada';
+import Estabelecimento from './paginas/Estabelecimento';
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Route component={Home} path="/" exact />
-      <Route component={Login} path="/login" />
-      <Route component={Perfil} path="/perfil" />
-      <Route component={Explorar} path="/explorar" />
-      <Route component={Historico} path="/historico-atividade" />
-      <Route component={Parada} path="/parada" />
+      {/* <Route component={Login} path="/login" /> */}
+      {/* <Route component={Perfil} path="/perfil" /> */}
+      {/* <Route component={Explorar} path="/explorar" /> */}
+      {/* <Route component={Historico} path="/historico-atividade" /> */}
+      <Route component={Estabelecimento} path="/estabelecimento" />
     </BrowserRouter>
   );
 }
