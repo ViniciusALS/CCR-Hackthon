@@ -26,4 +26,5 @@ As seguintes tecnologias foram usadas para desenvolver o front-end do projeto, v
 - [react.js](https://reactjs.org/)
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [react-router](https://reacttraining.com/react-router/)
+- [leaflet](https://leafletjs.com/reference-1.6.0.html)
 - [leaflet-react](https://react-leaflet.js.org/docs/en/intro)
