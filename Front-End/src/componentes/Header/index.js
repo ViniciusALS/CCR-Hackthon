@@ -8,7 +8,7 @@ import './styles.css';
 const Header = () => {
     return (
 
-        <header class="mobile-menu"> 
+        <header className="mobile-menu"> 
             <nav>
                 <Link to="#">
                     <FiArrowLeft />

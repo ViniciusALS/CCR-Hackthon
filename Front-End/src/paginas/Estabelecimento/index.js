@@ -10,7 +10,7 @@ import './styles.css';
 
 const Estabelecimento = () => {
   return (
-    <div class="pagina">
+        <div className="pagina">
         <Header/>
         <main>
             <h1>Posto do Seu Zé</h1>
