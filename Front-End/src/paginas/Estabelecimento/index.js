@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../componentes/Header';
 import Nota from '../../componentes/Nota';
+import api from '../../services/api';
 
-import imagem from '../../resources/gas-station.png';
-
+import imagem from '../../resources/gas-station.svg';
 import MarkerIcon from '../../resources/marker.png';
 
 import './styles.css';
-
-// import logo from '../../assets/logo.svg';
 
 const Estabelecimento = (props) => {
 
@@ -27,7 +25,15 @@ const Estabelecimento = (props) => {
     const [disponibilidade, setDisponibilidade] = useState();
     const [reviews, setReviews] = useState();
 
+    useEffect(() => {
+        api.get(`estabelecimentos/${estabelecimentoId}`)
+            .then(response => {
+                console.log(response.data);
+            });
+        }, []);
+
     const posicao = [latitude, longitude];
+    
     const greenIcon = L.icon({
         iconUrl: MarkerIcon,
         iconSize:     [55, 55]
