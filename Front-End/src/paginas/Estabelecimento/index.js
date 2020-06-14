@@ -1,15 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Map, TileLayer, Marker } from 'react-leaflet';
-import L from 'leaflet';
 import { Link } from 'react-router-dom';
 
 import Header from '../../componentes/Header';
+import MapaAplicacao from '../../componentes/MapaAplicacao';
 import Nota from '../../componentes/Nota';
 import DisponibilidadeItem from '../../componentes/DisponibilidadeItem';
 import AvaliacoesItem from '../../componentes/AvaliacoesItem';
 import api from '../../services/api';
-
-import MarkerIcon from '../../resources/marker.png';
 
 import './styles.css';
 
@@ -65,23 +62,14 @@ const Estabelecimento = (props) => {
         }, []
     );
 
-    const greenIcon = L.icon({
-        iconUrl: MarkerIcon,
-        iconSize:     [55, 55]
-    });
-
-
     return (
         <div className="pagina">
             <Header/>
             <main>
 
-                <Map className="map" center={[latitude, longitude]} zoom={17} animate={false} zoomControl={false}>
-                    <TileLayer
-                        attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                    <Marker position={[latitude, longitude]} icon={greenIcon}/>
-                </Map>
+                <MapaAplicacao 
+                    latitude={latitude}
+                    longitude={longitude}/>
 
                 <h1>{titulo}</h1>
                 <p>{descricao}</p>
