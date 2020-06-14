@@ -13,7 +13,7 @@
     font-size: 1.1em;
     color: #505050;
     
-    margin: 0.5em 0 1em 0;
+    margin: 0.5em 0 2em 0;
 }
 
 .estabelecimento-btn-avaliar {
@@ -31,4 +31,9 @@
 .estabelecimento-disponibilidades {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.estabelecimento-nota {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
 }

@@ -75,7 +75,7 @@ const Estabelecimento = (props) => {
                     <h1 className="estabelecimento-titulo">{titulo}</h1>
                     <p className="estabelecimento-descricao">{descricao}</p>
 
-                    <Nota value={notaGeral} />
+                    <Nota value={notaGeral} className="estabelecimento-nota"/>
 
                     <p className="estabelecimento-endereco">{endereco}</p>
                     
