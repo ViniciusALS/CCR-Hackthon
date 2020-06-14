@@ -17,8 +17,17 @@ import './styles.css';
 const Estabelecimento = (props) => {
 
     const estabelecimentoId = props.match.params.id;
-    const [nota, setNota] = useState(3);
 
+    const [titulo, setTitulo] = useState("Posto do Seu Zé");
+    const [descricao, setDescricao] = useState("O melhor posto da região!");
+    const [nota, setNota] = useState(3);
+    const [endereco, setEndereco] = useState("Rua Melo Augusta");
+    const [latitude, setLatitudo] = useState(-22.9108709);
+    const [longitude, setLongitude] = useState(-43.2190417);
+    const [disponibilidade, setDisponibilidade] = useState();
+    const [reviews, setReviews] = useState();
+
+    const posicao = [latitude, longitude];
     const greenIcon = L.icon({
         iconUrl: MarkerIcon,
         iconSize:     [55, 55]
@@ -41,12 +50,12 @@ const Estabelecimento = (props) => {
                     </Marker>
                 </Map>
 
-                <h1>Posto do Seu Zé</h1>
-                <p>O melhor posto da região!</p>
+                <h1>{titulo}</h1>
+                <p>{descricao}</p>
 
                 <Nota/>
 
-                <p>Rua Melo Augusta, RJ, Rio de Janeiro</p>
+                <p>{endereco}</p>
                 
                 <Link to="#">
                     Avaliar estabelecimento
