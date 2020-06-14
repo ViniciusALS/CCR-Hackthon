@@ -97,7 +97,9 @@ const Estabelecimento = (props) => {
                 <h2>Disponibilidades:</h2>
 
                 {disponibilidades.map(disponibilidade => (
-                    <DisponibilidadeItem item={disponibilidade.item} imagem={disponibilidade.imagem}/>                             
+                    <DisponibilidadeItem 
+                        item={disponibilidade.item} 
+                        imagem={disponibilidade.imagem}/>                             
                 ))}
                                 
                 <h2>Avaliações:</h2>
