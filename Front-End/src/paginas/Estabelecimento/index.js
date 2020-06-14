@@ -23,7 +23,7 @@ const Estabelecimento = (props) => {
     const [endereco, setEndereco] = useState("");
     const [latitude, setLatitude] = useState(0);
     const [longitude, setLongitude] = useState(0);
-    const [disponibilidade, setDisponibilidade] = useState({});
+    const [disponibilidade, setDisponibilidade] = useState([{}]);
     const [reviews, setReviews] = useState({});
 
     useEffect(() => {
