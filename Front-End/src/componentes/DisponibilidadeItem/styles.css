@@ -1,0 +1,23 @@
+.item-card {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 220px;
+    margin: 2em;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cecece62;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.25);
+
+}
+
+.item-card-imagem {
+    width: 60%;
+}
+
+.item-card-legenda {
+    text-transform: uppercase;
+    padding: 0;
+    margin: 1em 0 0 0;
+}

@@ -79,17 +79,19 @@ const Estabelecimento = (props) => {
 
                     <p className="estabelecimento-endereco">{endereco}</p>
                     
-                    <Link to="#">
+                    <Link className="link-btn" to="#">
                         <div className="estabelecimento-btn-avaliar">Avaliar estabelecimento</div>
                     </Link>
 
                     <h2>Disponibilidades:</h2>
 
-                    {disponibilidades.map(disponibilidade => (
-                        <DisponibilidadeItem 
-                            item={disponibilidade.item} 
-                            imagem={disponibilidade.imagem}/>                             
-                    ))}
+                    <div className="estabelecimento-disponibilidades">
+                        {disponibilidades.map(disponibilidade => (
+                            <DisponibilidadeItem 
+                                item={disponibilidade.item} 
+                                imagem={disponibilidade.imagem}/>                             
+                        ))}
+                    </div>
                                     
                     <h2>Avaliações:</h2>
 

@@ -1,5 +1,5 @@
 .estabelecimento-titulo {
-    font-size: 2.5em;
+    font-size: 3em;
     margin-bottom: 0.2em;
     padding: 0;
 }
@@ -10,5 +10,23 @@
 
 .estabelecimento-endereco {
     font-size: 1.2em;
-    color: #3E3E3E;
+    color: #505050;
+}
+
+.estabelecimento-btn-avaliar {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 0.5em 2em;
+    margin-top: 1em;
+    background-color: #F4BC33;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #CECECE;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.estabelecimento-disponibilidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }

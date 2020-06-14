@@ -10,8 +10,8 @@ const ItemCard = (props) => {
     return (
 
         <div className="item-card"> 
-            <img src={imagePath} alt={itemName}/>
-            <p>{itemName}</p>
+            <img className="item-card-imagem" src={imagePath} alt={itemName}/>
+            <p className="item-card-legenda">{itemName}</p>
         </div>
     );
 }
