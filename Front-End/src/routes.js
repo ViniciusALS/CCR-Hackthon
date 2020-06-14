@@ -16,7 +16,7 @@ const Routes = () => {
       {/* <Route component={Perfil} path="/perfil" /> */}
       {/* <Route component={Explorar} path="/explorar" /> */}
       {/* <Route component={Historico} path="/historico-atividade" /> */}
-      <Route component={Estabelecimento} path="/estabelecimento" />
+      <Route component={Estabelecimento} path="/estabelecimento/:id" />
     </BrowserRouter>
   );
 }
