@@ -22,7 +22,7 @@ const Estabelecimento = (props) => {
     const [endereco, setEndereco] = useState("");
     const [latitude, setLatitude] = useState(0);
     const [longitude, setLongitude] = useState(0);
-    const [disponibilidade, setDisponibilidade] = useState([{}]);
+    const [disponibilidades, setDisponibilidades] = useState([{}]);
     const [reviews, setReviews] = useState({});
 
     useEffect(() => {
@@ -34,7 +34,7 @@ const Estabelecimento = (props) => {
                 setEndereco(response.data.endereco);
                 setLatitude(response.data.latitude);
                 setLongitude(response.data.longitude);
-                setDisponibilidade(response.data.disponibilidades);
+                setDisponibilidades(response.data.disponibilidades);
                 setReviews(response.data.reviews);
             
             }).catch(function (error) {
@@ -46,7 +46,7 @@ const Estabelecimento = (props) => {
                 setEndereco("Rua Melo Augusta");
                 setLatitude(-22.9108709);
                 setLongitude(-43.2190417);
-                setDisponibilidade(
+                setDisponibilidades(
                     [
                         { "item": "Gasolina", "imagem": "file:///C:/Users/vinic/Desktop/gas-station.svg"},
                         { "item": "Banheiro", "imagem": "file:///C:/Users/vinic/Desktop/toilet.svg"},
@@ -95,8 +95,10 @@ const Estabelecimento = (props) => {
 
                 <h2>Disponibilidades:</h2>
 
-                <DisponibilidadeItem item={disponibilidade[0].item} imagem={disponibilidade[0].imagem}/>                             
-                
+                {disponibilidades.map(disponibilidade => (
+                    <DisponibilidadeItem item={disponibilidade.item} imagem={disponibilidade.imagem}/>                             
+                ))}
+                                
                 <h2>Avaliações:</h2>
 
                 <div>
