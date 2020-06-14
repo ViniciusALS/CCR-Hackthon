@@ -5,16 +5,22 @@ import { BsStar } from 'react-icons/bs';
 
 import './styles.css';
 
-const Nota = () => {
-    return (
+const Nota = (props) => {
 
-        <div> 
-            <BsStarFill/>
-            <BsStarFill/>
-            <BsStarFill/>
-            <BsStar/>
-            <BsStar/>
-        </div>
+    let value = Math.round(props.value);
+
+    const stars = [];
+
+    for (let i = 0; i < 5; i++) {
+        
+        if (i < value)
+            stars.push(<BsStarFill key={i} />);
+        else
+            stars.push(<BsStar key={i}/>);
+    }
+
+    return (
+        <div>{ stars }</div>
     );
 }
 

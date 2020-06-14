@@ -84,7 +84,7 @@ const Estabelecimento = (props) => {
                 <h1>{titulo}</h1>
                 <p>{descricao}</p>
 
-                <Nota pontuacao={notaGeral} />
+                <Nota value={notaGeral} />
 
                 <p>{endereco}</p>
                 
