@@ -1,5 +1,5 @@
 # CCR Hackathon 2020
-## [CaminhON](https://caminhon.netlify.app/estabelecimento/1)
+## [CaminhON](https://caminhon.netlify.app/)
 <p align="center">
   <img width="200px" height="200px" src="https://github.com/ViniciusALS/CCR-Hackthon/blob/master/.github/logo-oficial.png">
 </p>
