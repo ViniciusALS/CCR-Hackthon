@@ -9,9 +9,9 @@ O CaminhON e feito de caminhoneiros para caminhoneiros. Ele traz em um só lugar
 
 ### O Projeto
 
-O projeto foi dividido em duas pastas, `Front-End` e `Back-End`. Seguindo os links abaixo você poderá conferir a documentação específica de cada parte do projeto.
+O projeto foi dividido em duas pastas, `Front-End` e `Back-End`. Seguindo os links abaixo você poderá conferir mais a respeito de cada parte do projeto.
 
-- [Front End](./.github/front-end.md)
+- [Front End](./Front-End)
 - [Back End](./.github/back-end.md)
 
 
