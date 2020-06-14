@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../componentes/Header';
 import Nota from '../../componentes/Nota';
 import DisponibilidadeItem from '../../componentes/DisponibilidadeItem';
+import AvaliacoesItem from '../../componentes/AvaliacoesItem';
 import api from '../../services/api';
 
 import MarkerIcon from '../../resources/marker.png';
@@ -23,7 +24,7 @@ const Estabelecimento = (props) => {
     const [latitude, setLatitude] = useState(0);
     const [longitude, setLongitude] = useState(0);
     const [disponibilidades, setDisponibilidades] = useState([{}]);
-    const [reviews, setReviews] = useState({});
+    const [reviews, setReviews] = useState([{}]);
 
     useEffect(() => {
         api.get(`estabelecimentos/${estabelecimentoId}`)
@@ -101,12 +102,13 @@ const Estabelecimento = (props) => {
                                 
                 <h2>Avaliações:</h2>
 
-                <div>
-                    <h3>Marcos Antonio</h3>
-                    <Nota/>
-                    <p>Bem okay.</p>
-                </div>
-
+                {reviews.map(review => (
+                    <AvaliacoesItem 
+                        usuario={review.usuario}
+                        nota={review.nota}
+                        comentario={review.comentario}/>              
+                ))}                        
+                                
             </main>
         </div>
     )
