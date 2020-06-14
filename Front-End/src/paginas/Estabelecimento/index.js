@@ -71,34 +71,35 @@ const Estabelecimento = (props) => {
                     latitude={latitude}
                     longitude={longitude}/>
 
-                <h1>{titulo}</h1>
-                <p>{descricao}</p>
+                <div className="container">
+                    <h1 className="estabelecimento-titulo">{titulo}</h1>
+                    <p className="estabelecimento-descricao">{descricao}</p>
 
-                <Nota value={notaGeral} />
+                    <Nota value={notaGeral} />
 
-                <p>{endereco}</p>
-                
-                <Link to="#">
-                    Avaliar estabelecimento
-                </Link>
+                    <p className="estabelecimento-endereco">{endereco}</p>
+                    
+                    <Link to="#">
+                        <div className="estabelecimento-btn-avaliar">Avaliar estabelecimento</div>
+                    </Link>
 
-                <h2>Disponibilidades:</h2>
+                    <h2>Disponibilidades:</h2>
 
-                {disponibilidades.map(disponibilidade => (
-                    <DisponibilidadeItem 
-                        item={disponibilidade.item} 
-                        imagem={disponibilidade.imagem}/>                             
-                ))}
-                                
-                <h2>Avaliações:</h2>
+                    {disponibilidades.map(disponibilidade => (
+                        <DisponibilidadeItem 
+                            item={disponibilidade.item} 
+                            imagem={disponibilidade.imagem}/>                             
+                    ))}
+                                    
+                    <h2>Avaliações:</h2>
 
-                {reviews.map(review => (
-                    <AvaliacoesItem 
-                        usuario={review.usuario}
-                        nota={review.nota}
-                        comentario={review.comentario}/>              
-                ))}                        
-                                
+                    {reviews.map(review => (
+                        <AvaliacoesItem 
+                            usuario={review.usuario}
+                            nota={review.nota}
+                            comentario={review.comentario}/>              
+                    ))}                        
+                </div>      
             </main>
         </div>
     )

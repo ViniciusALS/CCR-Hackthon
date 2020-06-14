@@ -14,9 +14,9 @@ const Nota = (props) => {
     for (let i = 0; i < 5; i++) {
         
         if (i < value)
-            stars.push(<BsStarFill key={i} />);
+            stars.push(<BsStarFill className="nota-estrela" key={i} />);
         else
-            stars.push(<BsStar key={i}/>);
+            stars.push(<BsStar className="nota-estrela" key={i}/>);
     }
 
     return (

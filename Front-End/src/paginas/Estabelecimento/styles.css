@@ -1,8 +1,14 @@
-.map {
-    height: 40vh;
+.estabelecimento-titulo {
+    font-size: 2.5em;
+    margin-bottom: 0.2em;
+    padding: 0;
 }
 
-.disponibilidade-item {
-    height: 100px;
-    width: 100px;
+.estabelecimento-descricao {
+    font-size: 1.2em;
+}
+
+.estabelecimento-endereco {
+    font-size: 1.2em;
+    color: #3E3E3E;
 }
