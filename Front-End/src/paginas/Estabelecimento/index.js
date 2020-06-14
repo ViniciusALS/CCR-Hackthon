@@ -8,7 +8,6 @@ import Nota from '../../componentes/Nota';
 import DisponibilidadeItem from '../../componentes/DisponibilidadeItem';
 import api from '../../services/api';
 
-import imagem from '../../resources/gas-station.svg';
 import MarkerIcon from '../../resources/marker.png';
 
 import './styles.css';
@@ -97,7 +96,7 @@ const Estabelecimento = (props) => {
                 <h2>Disponibilidades:</h2>
 
                 <DisponibilidadeItem item={disponibilidade[0].item} imagem={disponibilidade[0].imagem}/>                             
-
+                
                 <h2>Avaliações:</h2>
 
                 <div>
