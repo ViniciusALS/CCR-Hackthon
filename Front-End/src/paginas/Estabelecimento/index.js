@@ -14,9 +14,9 @@ import './styles.css';
 
 // import logo from '../../assets/logo.svg';
 
-const Estabelecimento = () => {
+const Estabelecimento = (props) => {
 
-    const [posicao, setPosicao] = useState([-22.9108709, -43.2190417]);
+    const estabelecimentoId = props.match.params.id;
     const [nota, setNota] = useState(3);
 
     const greenIcon = L.icon({
