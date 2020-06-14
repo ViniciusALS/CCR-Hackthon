@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 import './styles.css';
@@ -18,11 +17,10 @@ const Home = () => {
           <h1>CaminhON</h1>
           <p>Seu suporte na estrada.</p>
 
-          <Link to="/login">
-            <span>
-              <FiLogIn />
-            </span>
-            <strong>Fazer login</strong>
+          <p>Esse e apenas um prototipo do nosso projeto.</p>
+
+          <Link to="/estabelecimento/1">
+            <strong>Veja como que os motoristas vao interagir com a nossa aplicacao.</strong>
           </Link>
         </main>
       </div>
