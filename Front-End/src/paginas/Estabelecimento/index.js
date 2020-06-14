@@ -41,13 +41,8 @@ const Estabelecimento = (props) => {
                 <Map className="map" center={posicao} zoom={17} animate={false} zoomControl={false}>
                     <TileLayer
                         attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                    />
-                    <Marker position={posicao} icon={greenIcon}>
-                    <Popup>
-                        A pretty CSS3 popup. <br /> Easily customizable.
-                    </Popup>
-                    </Marker>
+                        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
+                    <Marker position={posicao} icon={greenIcon}/>
                 </Map>
 
                 <h1>{titulo}</h1>
