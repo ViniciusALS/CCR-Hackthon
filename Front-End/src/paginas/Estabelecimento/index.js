@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 import Header from '../../componentes/Header';
 import Nota from '../../componentes/Nota';
+import DisponibilidadeItem from '../../componentes/DisponibilidadeItem';
 import api from '../../services/api';
 
 import imagem from '../../resources/gas-station.svg';
@@ -69,6 +70,7 @@ const Estabelecimento = (props) => {
         iconSize:     [55, 55]
     });
 
+
     return (
         <div className="pagina">
             <Header/>
@@ -94,11 +96,7 @@ const Estabelecimento = (props) => {
 
                 <h2>Disponibilidades:</h2>
 
-                <div>
-                    <img src={imagem} alt="gas"/>
-                    <p>Gasolina</p>
-                </div>
-                               
+                <DisponibilidadeItem item={disponibilidade[0].item} imagem={disponibilidade[0].imagem}/>                             
 
                 <h2>Avaliações:</h2>
 
