@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import { Map, TileLayer, Marker } from 'react-leaflet';
 import L from 'leaflet';
 import { Link } from 'react-router-dom';
 
