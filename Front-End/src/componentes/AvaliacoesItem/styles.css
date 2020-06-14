@@ -1,0 +1,25 @@
+.avaliacao-card {
+    border: 1px solid #cecece62;
+    padding: 1.5em;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.25);
+    margin: 2em 0.5em;
+    width: 40%;
+}
+
+.avaliacao-card-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.6em;
+    justify-content: space-between;
+}
+
+.avaliacao-card-header h3 {
+    font-size: 1.6em;
+}
+
+.avaliacao-card-descricao {
+    font-size: 1.2em;
+    color: #505050;
+    margin-top: 1em;
+}

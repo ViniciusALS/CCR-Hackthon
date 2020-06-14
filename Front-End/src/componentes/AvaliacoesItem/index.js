@@ -11,10 +11,11 @@ const AvaliacoesItem = (props) => {
     
     return (
 
-        <div>
-            <h3>{usuario}</h3>
-            <Nota value={nota}/>
-            <p>{comentario}</p>
+        <div className="avaliacao-card">
+            <div className="avaliacao-card-header">
+                <h3>{usuario}</h3> <Nota value={nota}/>
+            </div>
+            <p className="avaliacao-card-descricao">{comentario}</p>
         </div>
     );
 }
