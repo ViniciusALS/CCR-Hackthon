@@ -49,10 +49,10 @@ const Estabelecimento = (props) => {
                 setLongitude(-43.2190417);
                 setDisponibilidades(
                     [
-                        { "item": "Gasolina", "imagem": "file:///C:/Users/vinic/Desktop/gas-station.svg"},
-                        { "item": "Banheiro", "imagem": "file:///C:/Users/vinic/Desktop/toilet.svg"},
-                        { "item": "Chuveiro", "imagem": "file:///C:/Users/vinic/Desktop/shower.svg"},
-                        { "item": "Cafeteria", "imagem": "file:///C:/Users/vinic/Desktop/cafe.svg"}
+                        { "item": "Gasolina", "imagem": "https://imgur.com/nlQaeVP.png"},
+                        { "item": "Banheiro", "imagem": "https://imgur.com/RQ9DsSA.png"},
+                        { "item": "Chuveiro", "imagem": "https://imgur.com/tJS9JHe.png"},
+                        { "item": "Cafeteria", "imagem": "https://imgur.com/QseCioi.png"}
                     ]);
                 setReviews(
                     [
