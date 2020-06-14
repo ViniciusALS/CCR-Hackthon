@@ -13,7 +13,7 @@ const AvaliacoesItem = (props) => {
 
         <div className="avaliacao-card">
             <div className="avaliacao-card-header">
-                <h3>{usuario}</h3> <Nota value={nota}/>
+                <h3>{usuario}</h3> <Nota className="avaliacao-card-notas" value={nota}/>
             </div>
             <p className="avaliacao-card-descricao">{comentario}</p>
         </div>

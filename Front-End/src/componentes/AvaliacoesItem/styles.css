@@ -1,9 +1,9 @@
 .avaliacao-card {
     border: 1px solid #cecece62;
-    padding: 1.5em;
+    padding: 1em;
     border-radius: 5px;
     box-shadow: 5px 5px 15px 1px rgba(0, 0, 0, 0.25);
-    margin: 2em 0.5em;
+    margin: 1.5em 0.5em;
     width: 40%;
 }
 
@@ -15,11 +15,11 @@
 }
 
 .avaliacao-card-header h3 {
-    font-size: 1.6em;
+    font-size: 1.3em;
 }
 
 .avaliacao-card-descricao {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #505050;
     margin-top: 1em;
 }
