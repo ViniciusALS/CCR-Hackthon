@@ -1,4 +1,4 @@
-# [CaminhON](https://caminhon.netlify.app/estabelecimento/1)
+# [CaminhON](https://caminhon.netlify.app)
 ## Front End
 
 O front-end do nosso site esta sendo servido pelo [Netlify](https://app.netlify.com) no endereço https://caminhon.netlify.app.
