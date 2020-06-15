@@ -13,7 +13,7 @@ Pensando na melhoria da situação, o app CaminhON oferece o compartilhamento de
 O projeto foi dividido em duas pastas, `Front-End` e `Back-End`. Seguindo os links abaixo você poderá conferir mais a respeito de cada parte do projeto.
 
 - [Front End](./Front-End)
-- [Back End](./.github/back-end.md)
+- [Back End](./Back-End)
 
 
 ### Como contribuir
