@@ -19,4 +19,4 @@ O projeto foi dividido em duas pastas, `Front-End` e `Back-End`. Seguindo os lin
 
 ### Como contribuir
 
-Você contribuir para o projeto de várias formas, mas antes de qualquer coisa, leia primeiro o nosso [código de conduta](./CODE_OF_CONDUCT.md). Feito isso, você poderá contruir com o CaminhON seja criando um _fork_ do projeto e solicitando um _pull-request_ após terminar suas modificações ou utilizando nosso serviço e criando `issues` no github para relatar qualquer problema que você encontre com nossa aplicação.
+Você pode contribuir para o projeto de várias formas, mas antes de qualquer coisa, leia primeiro o nosso [código de conduta](./CODE_OF_CONDUCT.md). Feito isso, você poderá contruir com o CaminhON seja criando um _fork_ do projeto e solicitando um _pull-request_ após terminar suas modificações ou utilizando nosso serviço e criando `issues` no github para relatar qualquer problema que você encontre com nossa aplicação.
