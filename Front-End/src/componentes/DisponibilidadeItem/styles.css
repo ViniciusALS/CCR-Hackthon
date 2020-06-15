@@ -26,7 +26,7 @@
     .item-card {
         width: 100px;
         height: 100px;
-        margin: 0.5em;
+        margin: 0.5em 30%;
     }
 
     .item-card-imagem {
@@ -36,5 +36,40 @@
     .item-card-legenda {
         margin: 0.4em 0 0 0;
         font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+
+    .item-card {
+        width: 120px;
+        height: 120px;
+        margin: 1em 45%;
+    }
+
+    .item-card-imagem {
+        width: 50%;
+    }
+
+    .item-card-legenda {
+        margin: 0.4em 0 0 0;
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+
+    .item-card {
+        width: 120px;
+        height: 120px;
+    }
+
+    .item-card-imagem {
+        width: 60%;
+    }
+
+    .item-card-legenda {
+        margin: 0.4em 0 0 0;
+        font-size: 0.9em;
     }
 }

@@ -46,3 +46,35 @@ h3, p {
         text-decoration: none;
     }
 }
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+
+    .container {
+        width: 90%;
+    }   
+    
+    h2 {
+        margin-top: 1em;
+        font-size: 1.5em;
+        margin-bottom: 0.1em;
+    }
+
+    .link-btn {
+        width: 80%;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+
+    .container {
+        width: 85%;
+    }   
+    
+    h2 {
+        margin-top: 1em;
+        font-size: 1.8em;
+        margin-bottom: 0.1em;
+    }
+}

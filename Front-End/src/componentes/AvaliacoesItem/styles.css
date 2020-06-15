@@ -32,6 +32,64 @@
 
     .avaliacao-card {
         margin: 1em 0.5em;
-        width: 90%;
+        width: 85%;
+        text-align: left;
     }    
+
+    .avaliacao-card-header h3 {
+        font-size: 1.1em;
+    }
+
+    .avaliacao-card-descricao {
+        font-size: 0.9em;
+        margin-top: 0.5em;
+    }
+
+    .avaliacao-card-notas {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 425px) and (min-width: 376px){
+
+    .avaliacao-card {
+        margin: 1em 0.5em;
+        width: 90%;
+        text-align: left;
+    }    
+
+    .avaliacao-card-header h3 {
+        font-size: 1.2em;
+    }
+
+    .avaliacao-card-descricao {
+        font-size: 0.9em;
+        margin-top: 0.7em;
+    }
+
+    .avaliacao-card-notas {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 426px){
+
+    .avaliacao-card {
+        margin: 1em 0.5em;
+        width: 70%;
+        text-align: left;
+    }    
+
+    .avaliacao-card-header h3 {
+        font-size: 1.3em;
+    }
+
+    .avaliacao-card-descricao {
+        font-size: 1em;
+        margin-top: 0.9em;
+    }
+
+    .avaliacao-card-notas {
+        font-size: 0.9em;
+    }
 }

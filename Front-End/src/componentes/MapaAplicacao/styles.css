@@ -3,10 +3,7 @@
     width: 100%;
 }
 
-body {
-    overflow-x: hidden;
-}
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 375px) {
 
     .map {
         height: 30vh;

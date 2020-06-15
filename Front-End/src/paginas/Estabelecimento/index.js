@@ -94,13 +94,15 @@ const Estabelecimento = (props) => {
                     </div>
                                     
                     <h2>Avaliações:</h2>
-
-                    {reviews.map(review => (
-                        <AvaliacoesItem 
-                            usuario={review.usuario}
-                            nota={review.nota}
-                            comentario={review.comentario}/>              
-                    ))}                        
+                    
+                    <div className="estabelecimento-avaliacoes">
+                        {reviews.map(review => (
+                            <AvaliacoesItem 
+                                usuario={review.usuario}
+                                nota={review.nota}
+                                comentario={review.comentario}/>              
+                        ))}  
+                    </div>                      
                 </div>      
             </main>
         </div>
