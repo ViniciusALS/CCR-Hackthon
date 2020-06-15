@@ -101,7 +101,7 @@ const Estabelecimento = (props) => {
                 </div>                      
             </div>      
         </main>
-    )
+    );
 }
 
 export default Estabelecimento;
