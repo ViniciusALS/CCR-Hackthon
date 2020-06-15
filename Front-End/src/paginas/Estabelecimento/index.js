@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../../componentes/Header';
 import MapaAplicacao from '../../componentes/MapaAplicacao';
 import Nota from '../../componentes/Nota';
 import DisponibilidadeItem from '../../componentes/DisponibilidadeItem';
@@ -63,49 +62,45 @@ const Estabelecimento = (props) => {
     );
 
     return (
-        <div className="pagina">
-            <Header/>
-            <main>
+        <main>
+            <MapaAplicacao 
+                latitude={latitude}
+                longitude={longitude}/>
 
-                <MapaAplicacao 
-                    latitude={latitude}
-                    longitude={longitude}/>
+            <div className="container">
+                <h1 className="estabelecimento-titulo">{titulo}</h1>
+                <p className="estabelecimento-descricao">{descricao}</p>
 
-                <div className="container">
-                    <h1 className="estabelecimento-titulo">{titulo}</h1>
-                    <p className="estabelecimento-descricao">{descricao}</p>
+                <Nota value={notaGeral} className="estabelecimento-nota"/>
 
-                    <Nota value={notaGeral} className="estabelecimento-nota"/>
+                <p className="estabelecimento-endereco">{endereco}</p>
+                
+                <Link className="link-btn" to="#">
+                    <div className="estabelecimento-btn-avaliar">Avaliar estabelecimento</div>
+                </Link>
 
-                    <p className="estabelecimento-endereco">{endereco}</p>
-                    
-                    <Link className="link-btn" to="#">
-                        <div className="estabelecimento-btn-avaliar">Avaliar estabelecimento</div>
-                    </Link>
+                <h2>Disponibilidades:</h2>
 
-                    <h2>Disponibilidades:</h2>
-
-                    <div className="estabelecimento-disponibilidades">
-                        {disponibilidades.map(disponibilidade => (
-                            <DisponibilidadeItem 
-                                item={disponibilidade.item} 
-                                imagem={disponibilidade.imagem}/>                             
-                        ))}
-                    </div>
-                                    
-                    <h2>Avaliações:</h2>
-                    
-                    <div className="estabelecimento-avaliacoes">
-                        {reviews.map(review => (
-                            <AvaliacoesItem 
-                                usuario={review.usuario}
-                                nota={review.nota}
-                                comentario={review.comentario}/>              
-                        ))}  
-                    </div>                      
-                </div>      
-            </main>
-        </div>
+                <div className="estabelecimento-disponibilidades">
+                    {disponibilidades.map(disponibilidade => (
+                        <DisponibilidadeItem 
+                            item={disponibilidade.item} 
+                            imagem={disponibilidade.imagem}/>                             
+                    ))}
+                </div>
+                                
+                <h2>Avaliações:</h2>
+                
+                <div className="estabelecimento-avaliacoes">
+                    {reviews.map(review => (
+                        <AvaliacoesItem 
+                            usuario={review.usuario}
+                            nota={review.nota}
+                            comentario={review.comentario}/>              
+                    ))}  
+                </div>                      
+            </div>      
+        </main>
     )
 }
 

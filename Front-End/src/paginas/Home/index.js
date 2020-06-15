@@ -7,24 +7,16 @@ import './styles.css';
 
 const Home = () => {
   return (
-    <div id="page-home">
-      <div className="content">
-        <header>
-          {/* <img src={logo} alt="CaminhON" /> */}
-        </header>
+    <main>
+      <h1>CaminhON</h1>
+      <p>Seu suporte na estrada.</p>
 
-        <main>
-          <h1>CaminhON</h1>
-          <p>Seu suporte na estrada.</p>
+      <p>Esse e apenas um prototipo do nosso projeto.</p>
 
-          <p>Esse e apenas um prototipo do nosso projeto.</p>
-
-          <Link to="/estabelecimento/1">
-            <strong>Veja como que os motoristas vao interagir com a nossa aplicacao.</strong>
-          </Link>
-        </main>
-      </div>
-    </div>
+      <Link to="/estabelecimento/1">
+        <strong>Veja como que os motoristas vao interagir com a nossa aplicacao.</strong>
+      </Link>
+    </main>
   )
 }
 
