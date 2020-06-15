@@ -1,4 +1,0 @@
-Esse projeto com o back-end visa melhorar o envio e recebimento de informações do usuário ao sistema, assim o usuário tem uma experiência
-melhor do software com tempo de resposta bem curto. 
-Foi utilizado a linguagem PHP com o framework Laravel, pois o mesmo tem um tempo de resposta, 
-bem rapido de envio e recebimento de informações. Esse back-end tem API RestFull. 
