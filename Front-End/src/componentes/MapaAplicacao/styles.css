@@ -1,3 +1,11 @@
 .map {
     height: 40vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 375px){
+
+    .map {
+        height: 30vh;
+    }
 }

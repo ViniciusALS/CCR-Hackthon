@@ -27,3 +27,11 @@
 .avaliacao-card-notas {
     font-size: 1em;
 }
+
+@media only screen and (max-width: 375px){
+
+    .avaliacao-card {
+        margin: 1em 0.5em;
+        width: 90%;
+    }    
+}
